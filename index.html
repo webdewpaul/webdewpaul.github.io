@@ -24,6 +24,7 @@
 		<!-- Подключаем наш файл со стилями, который находится в папке css-->
 		<link rel="stylesheet" href="css/bootstrap-grid.min.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/animate.css">
 </head>
 
 <body>
@@ -31,13 +32,13 @@
  	<div class="contanier">
  		<div class="row">
  			<div class="col-lg-7"> 
- 				<img class="header-img" src="img/Main_img.png" alt="Монитор">
+ 				<img class="header-img wow fadeInLeftBig" src="img/Main_img.png" alt="Монитор">
  			</div>
  			<div class="col-lg-5">
- 				<p class="header-pretitle">Веб-разработчик</p>
- 				<h1 class="header-title">Павел Фролов</h1>
- 				<p class="header-subtitle">Верстка на HTML/CSS<br>Разработка сайтов под ключ</p>
- 				<div class="header-button-block">
+ 				<p class="header-pretitle wow fadeInRightBig" data-wow-delay="0.1s">Веб-разработчик</p>
+ 				<h1 class="header-title wow fadeInRightBig"data-wow-delay="0.2s">Павел Фролов</h1>
+ 				<p class="header-subtitle wow fadeInRightBig"data-wow-delay="0.3s">Верстка на HTML/CSS<br>Разработка сайтов под ключ</p>
+ 				<div class="header-button-block wow fadeInRightBig"data-wow-delay="0.4s">
  					<a href="http://vk.me/fp712" class="header-button">Связаться</a>
  				<small>*Это бесплатно</small>
  				</div>
@@ -51,7 +52,7 @@
 
  <section class="portfolio">
  	<div class="contanier">
- 		<div class="portfolio-block">
+ 		<div class="portfolio-block wow fadeIn">
  			<h2 class="portfolio-title">Портфолио</h2>
  			<p class="portfolio-subtitle">Мои работы</p>
  			<div class="row">
@@ -88,10 +89,10 @@
  			<div class="col-md-4">
  				<div class="social-block">
  					<p>Подпишитесь:</p>
- 					<a href="#"><img src="img/Social/facebook-logo-button.png" alt="Facebook"></a>
- 					<a href="#"><img src="img/Social/telegram-symbol.png" alt="Telegram"></a>
- 					<a href="https://vk.com/fp712"><img src="img/Social/vk-social-logotype.png" alt="ВКонтакте"></a>
- 					<a href="#"><img src="img/Social/youtube-symbol.png" alt="YouTube"></a>
+ 					<a class="wow bounceInDown" data-wow-delay="0.1s" href="#"><img src="img/Social/facebook-logo-button.png" alt="Facebook"></a>
+ 					<a class="wow bounceInDown" data-wow-delay="0.2s" href="#"><img  src="img/Social/telegram-symbol.png" alt="Telegram"></a>
+ 					<a class="wow bounceInDown" data-wow-delay="0.3s" href="https://vk.com/fp712"><img src="img/Social/vk-social-logotype.png" alt="ВКонтакте"></a>
+ 					<a class="wow bounceInDown" data-wow-delay="0.4s" href="#"><img  src="img/Social/youtube-symbol.png" alt="YouTube"></a>
  				
  				</div>
  			</div>
@@ -104,6 +105,9 @@
  		</div>
  	</div>
  </footer>
-
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
 </body>
 </html>
